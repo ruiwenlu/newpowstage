@@ -11,11 +11,7 @@ public class FTLViewConstants {
     public static String NEWS_INDUSTRY = "/news/industry_news";
     public static final String NEWS_DETAIL = "/news/news_detail";
 
-    public static final String ABOUT_BRAND = "/about/brand";
-    public static final String ABOUT_FACTORY = "/about/factory";
-    public static final String ABOUT_PRODUCT = "/about/product";
-    public static final String ABOUT_COMPANY = "/about/company";
-    public static final String ABOUT_HONOR = "/about/honor";
+    public static final String ABOUT_US = "/about/about_us";
 
     public static final String PRODUCT_LIST = "/product/list";
     public static final String PRODUCT_DETAIL = "/product/detail";

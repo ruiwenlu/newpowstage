@@ -22,9 +22,4 @@ public class HomePageController {
         return FTLViewConstants.HOMEPAGE;
     }
 
-    @GetMapping("/about")
-    public String getAbout(Model model){
-        return "about";
-    }
-
 }

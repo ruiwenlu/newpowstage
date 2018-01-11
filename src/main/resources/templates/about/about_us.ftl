@@ -37,7 +37,7 @@
                 </div>
                 <div class="col-md-5 col-sm-5">
                     <div class="about-img">
-                        <img src="img/about/about.jpg" alt="" class="img-responsive">
+                        <img src="../static/img/about/about.jpg" alt="" class="img-responsive">
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                 <div class="col-md-3 col-sm-4">
                     <div class="single-member">
                         <div class="member-info">
-                            <img src="img/about/1.jpg" alt="">
+                            <img src="../static/img/about/1.jpg" alt="">
                             <div class="member-social-profile">
                                 <a href="#"> <i class="fa fa-facebook"></i> </a>
                                 <a href="#"> <i class="fa fa-twitter"></i> </a>
@@ -67,7 +67,7 @@
                 <div class="col-md-3 col-sm-4">
                     <div class="single-member">
                         <div class="member-info">
-                            <img src="img/about/2.jpg" alt="">
+                            <img src="../static/img/about/2.jpg" alt="">
                             <div class="member-social-profile">
                                 <a href="#"> <i class="fa fa-facebook"></i> </a>
                                 <a href="#"> <i class="fa fa-twitter"></i> </a>
@@ -80,7 +80,7 @@
                 <div class="col-md-3 col-sm-4">
                     <div class="single-member">
                         <div class="member-info">
-                            <img src="img/about/3.jpg" alt="">
+                            <img src="../static/img/about/3.jpg" alt="">
                             <div class="member-social-profile">
                                 <a href="#"> <i class="fa fa-facebook"></i> </a>
                                 <a href="#"> <i class="fa fa-twitter"></i> </a>
@@ -93,7 +93,7 @@
                 <div class="col-md-3 hidden-sm">
                     <div class="single-member">
                         <div class="member-info">
-                            <img src="img/about/4.jpg" alt="">
+                            <img src="../static/img/about/4.jpg" alt="">
                             <div class="member-social-profile">
                                 <a href="#"> <i class="fa fa-facebook"></i> </a>
                                 <a href="#"> <i class="fa fa-twitter"></i> </a>
