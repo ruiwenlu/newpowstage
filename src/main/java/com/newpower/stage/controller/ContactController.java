@@ -16,8 +16,4 @@ public class ContactController {
         return FTLViewConstants.CONTACT;
     }
 
-//    @GetMapping("/contact/map")
-//    private String getContactMap(Model model){
-//        return FTLViewConstants.CONTACT_MAP;
-//    }
 }
