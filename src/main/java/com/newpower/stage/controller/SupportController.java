@@ -11,14 +11,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class SupportController {
 
-    @GetMapping("/support/install")
+    @GetMapping("/support")
     public String getTechSupport(Model model){
-        return FTLViewConstants.SUPPORT_INSTALL;
-    }
-
-    @GetMapping("/support/problem")
-    public String getProblemSupport(Model model){
-        return FTLViewConstants.SUPPORT_PROBLEM;
+        return FTLViewConstants.SUPPORT;
     }
 
     @GetMapping("/support/detail")

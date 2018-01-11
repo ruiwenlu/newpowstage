@@ -11,14 +11,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class NewsController {
 
-    @GetMapping("/news/company")
+    @GetMapping("/news")
     public String getCompanyNews(Model model){
-        return FTLViewConstants.NEWS_COMPANY;
-    }
-
-    @GetMapping("/news/industry")
-    public String getIndustryNews(Model model){
-        return FTLViewConstants.NEWS_INDUSTRY;
+        return FTLViewConstants.NEWS;
     }
 
     @GetMapping("/news/detail")

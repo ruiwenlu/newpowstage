@@ -2,7 +2,7 @@
 <!doctype html>
 <html class="no-js" lang="">
 <head>
-    <title> Cases || James </title>
+    <title> News || James </title>
 [#include "/common/head.ftl" /]
 </head>
 <body>
