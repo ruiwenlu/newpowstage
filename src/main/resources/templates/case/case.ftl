@@ -94,67 +94,67 @@
                         <div class="blog-area">
                             <div class="single-blog-post-page">
                                 <div class="blog-img">
-                                    <a href="blog-details.html">
+                                    <a href="/case/detail">
                                         <img src="../static/img/blog/5.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-content">
-                                    <a href="blog-details.html" class="blog-title">Lorem ipsum dolor sit amet</a>
+                                    <a href="/case/detail" class="blog-title">Lorem ipsum dolor sit amet</a>
                                     <span><a href="#">By plaza themes - </a>17 Aug 2015 ( 0 comments )</span>
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...</p>
-                                    <a href="blog-details.html" class="readmore">read more ></a>
+                                    <a href="/case/detail" class="readmore">read more ></a>
                                 </div>
                             </div>
                             <div class="single-blog-post-page">
                                 <div class="blog-img">
-                                    <a href="blog-details.html">
+                                    <a href="/case/detail">
                                         <img src="../static/img/blog/6.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-content">
-                                    <a href="blog-details.html" class="blog-title">Lorem ipsum dolor sit amet</a>
+                                    <a href="/case/detail" class="blog-title">Lorem ipsum dolor sit amet</a>
                                     <span><a href="#">By plaza themes - </a>17 Aug 2015 ( 0 comments )</span>
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...</p>
-                                    <a href="blog-details.html" class="readmore">read more ></a>
+                                    <a href="/case/detail" class="readmore">read more ></a>
                                 </div>
                             </div>
                             <div class="single-blog-post-page">
                                 <div class="blog-img">
-                                    <a href="blog-details.html">
+                                    <a href="/case/detail">
                                         <img src="../static/img/blog/5.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-content">
-                                    <a href="blog-details.html" class="blog-title">Lorem ipsum dolor sit amet</a>
+                                    <a href="/case/detail" class="blog-title">Lorem ipsum dolor sit amet</a>
                                     <span><a href="#">By plaza themes - </a>17 Aug 2015 ( 0 comments )</span>
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...</p>
-                                    <a href="blog-details.html" class="readmore">read more ></a>
+                                    <a href="/case/detail" class="readmore">read more ></a>
                                 </div>
                             </div>
                             <div class="single-blog-post-page">
                                 <div class="blog-img">
-                                    <a href="blog-details.html">
+                                    <a href="/case/detail">
                                         <img src="../static/img/blog/6.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-content">
-                                    <a href="blog-details.html" class="blog-title">Lorem ipsum dolor sit amet</a>
+                                    <a href="/case/detail" class="blog-title">Lorem ipsum dolor sit amet</a>
                                     <span><a href="#">By plaza themes - </a>17 Aug 2015 ( 0 comments )</span>
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...</p>
-                                    <a href="blog-details.html" class="readmore">read more ></a>
+                                    <a href="/case/detail" class="readmore">read more ></a>
                                 </div>
                             </div>
                             <div class="single-blog-post-page">
                                 <div class="blog-img">
-                                    <a href="blog-details.html">
+                                    <a href="/case/detail">
                                         <img src="../static/img/blog/5.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-content">
-                                    <a href="blog-details.html" class="blog-title">Lorem ipsum dolor sit amet</a>
+                                    <a href="/case/detail" class="blog-title">Lorem ipsum dolor sit amet</a>
                                     <span><a href="#">By plaza themes - </a>17 Aug 2015 ( 0 comments )</span>
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...</p>
-                                    <a href="blog-details.html" class="readmore">read more ></a>
+                                    <a href="/case/detail" class="readmore">read more ></a>
                                 </div>
                             </div>
                         </div>

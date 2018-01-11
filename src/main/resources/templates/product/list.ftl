@@ -156,7 +156,7 @@
                                             <span>new</span>
                                         </div>
                                         <div class="product-img">
-                                            <a href="single-product.html">
+                                            <a href="/product/detail">
                                                 <img src="../static/img/product/25.png" alt="" class="primary-img">
                                                 <img src="../static/img/product/26.png" alt="" class="secondary-img">
                                             </a>
@@ -171,7 +171,7 @@
                                         </div>
                                         <div class="product-price">
                                             <div class="product-name">
-                                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
+                                                <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
                                             </div>
                                             <div class="price-rating">
                                                 <span>$170.00</span>
@@ -192,7 +192,7 @@
                                             <span>new</span>
                                         </div>
                                         <div class="product-img">
-                                            <a href="single-product.html">
+                                            <a href="/product/detail">
                                                 <img src="../static/img/product/23.png" alt="" class="primary-img">
                                                 <img src="../static/img/product/24.png" alt="" class="secondary-img">
                                             </a>
@@ -207,7 +207,7 @@
                                         </div>
                                         <div class="product-price">
                                             <div class="product-name">
-                                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
+                                                <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
                                             </div>
                                             <div class="price-rating">
                                                 <span>$170.00</span>
@@ -228,7 +228,7 @@
                                             <span>new</span>
                                         </div>
                                         <div class="product-img">
-                                            <a href="single-product.html">
+                                            <a href="/product/detail">
                                                 <img src="../static/img/product/21.png" alt="" class="primary-img">
                                                 <img src="../static/img/product/22.png" alt="" class="secondary-img">
                                             </a>
@@ -243,7 +243,7 @@
                                         </div>
                                         <div class="product-price">
                                             <div class="product-name">
-                                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
+                                                <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
                                             </div>
                                             <div class="price-rating">
                                                 <span>$170.00</span>
@@ -264,7 +264,7 @@
                                             <span>new</span>
                                         </div>
                                         <div class="product-img">
-                                            <a href="single-product.html">
+                                            <a href="/product/detail">
                                                 <img src="../static/img/product/19.png" alt="" class="primary-img">
                                                 <img src="../static/img/product/20.png" alt="" class="secondary-img">
                                             </a>
@@ -279,7 +279,7 @@
                                         </div>
                                         <div class="product-price">
                                             <div class="product-name">
-                                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
+                                                <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
                                             </div>
                                             <div class="price-rating">
                                                 <span>$170.00</span>
@@ -300,7 +300,7 @@
                                             <span>new</span>
                                         </div>
                                         <div class="product-img">
-                                            <a href="single-product.html">
+                                            <a href="/product/detail">
                                                 <img src="../static/img/product/17.png" alt="" class="primary-img">
                                                 <img src="../static/img/product/18.png" alt="" class="secondary-img">
                                             </a>
@@ -315,7 +315,7 @@
                                         </div>
                                         <div class="product-price">
                                             <div class="product-name">
-                                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
+                                                <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
                                             </div>
                                             <div class="price-rating">
                                                 <span>$170.00</span>
@@ -336,7 +336,7 @@
                                             <span>new</span>
                                         </div>
                                         <div class="product-img">
-                                            <a href="single-product.html">
+                                            <a href="/product/detail">
                                                 <img src="../static/img/product/15.png" alt="" class="primary-img">
                                                 <img src="../static/img/product/16.png" alt="" class="secondary-img">
                                             </a>
@@ -351,7 +351,7 @@
                                         </div>
                                         <div class="product-price">
                                             <div class="product-name">
-                                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
+                                                <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
                                             </div>
                                             <div class="price-rating">
                                                 <span>$170.00</span>
@@ -372,7 +372,7 @@
                                             <span>new</span>
                                         </div>
                                         <div class="product-img">
-                                            <a href="single-product.html">
+                                            <a href="/product/detail">
                                                 <img src="../static/img/product/13.png" alt="" class="primary-img">
                                                 <img src="../static/img/product/14.png" alt="" class="secondary-img">
                                             </a>
@@ -387,7 +387,7 @@
                                         </div>
                                         <div class="product-price">
                                             <div class="product-name">
-                                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
+                                                <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
                                             </div>
                                             <div class="price-rating">
                                                 <span>$170.00</span>
@@ -408,7 +408,7 @@
                                             <span>new</span>
                                         </div>
                                         <div class="product-img">
-                                            <a href="single-product.html">
+                                            <a href="/product/detail">
                                                 <img src="../static/img/product/11.png" alt="" class="primary-img">
                                                 <img src="../static/img/product/12.png" alt="" class="secondary-img">
                                             </a>
@@ -423,7 +423,7 @@
                                         </div>
                                         <div class="product-price">
                                             <div class="product-name">
-                                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
+                                                <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
                                             </div>
                                             <div class="price-rating">
                                                 <span>$170.00</span>
@@ -444,7 +444,7 @@
                                             <span>new</span>
                                         </div>
                                         <div class="product-img">
-                                            <a href="single-product.html">
+                                            <a href="/product/detail">
                                                 <img src="../static/img/product/9.png" alt="" class="primary-img">
                                                 <img src="../static/img/product/10.png" alt="" class="secondary-img">
                                             </a>
@@ -459,7 +459,7 @@
                                         </div>
                                         <div class="product-price">
                                             <div class="product-name">
-                                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
+                                                <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
                                             </div>
                                             <div class="price-rating">
                                                 <span>$170.00</span>
@@ -480,14 +480,14 @@
                                     <div class="single-list-product">
                                         <div class="col-sm-4">
                                             <div class="list-product-img">
-                                                <a href="single-product.html">
+                                                <a href="/product/detail">
                                                     <img src="../static/img/product/1.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="list-product-info">
-                                                <a href="single-product.html" class="list-product-name"> Cras neque metus</a>
+                                                <a href="/product/detail" class="list-product-name"> Cras neque metus</a>
                                                 <div class="price-rating">
                                                     <span class="old-price">$700.00</span>
                                                     <span>$800.00</span>
@@ -503,7 +503,7 @@
                                                 </div>
                                                 <div class="list-product-details">
                                                     <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nul
-                                                        <a href="single-product.html">Learn More</a> </p>
+                                                        <a href="/product/detail">Learn More</a> </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -511,14 +511,14 @@
                                     <div class="single-list-product">
                                         <div class="col-sm-4">
                                             <div class="list-product-img">
-                                                <a href="single-product.html">
+                                                <a href="/product/detail">
                                                     <img src="../static/img/product/6.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="list-product-info">
-                                                <a href="single-product.html" class="list-product-name"> Cras neque metus</a>
+                                                <a href="/product/detail" class="list-product-name"> Cras neque metus</a>
                                                 <div class="price-rating">
                                                     <span class="old-price">$700.00</span>
                                                     <span>$800.00</span>
@@ -534,7 +534,7 @@
                                                 </div>
                                                 <div class="list-product-details">
                                                     <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nul
-                                                        <a href="single-product.html">Learn More</a> </p>
+                                                        <a href="/product/detail">Learn More</a> </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -542,14 +542,14 @@
                                     <div class="single-list-product">
                                         <div class="col-sm-4">
                                             <div class="list-product-img">
-                                                <a href="single-product.html">
+                                                <a href="/product/detail">
                                                     <img src="../static/img/product/3.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="list-product-info">
-                                                <a href="single-product.html" class="list-product-name"> Cras neque metus</a>
+                                                <a href="/product/detail" class="list-product-name"> Cras neque metus</a>
                                                 <div class="price-rating">
                                                     <span class="old-price">$700.00</span>
                                                     <span>$800.00</span>
@@ -565,7 +565,7 @@
                                                 </div>
                                                 <div class="list-product-details">
                                                     <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nul
-                                                        <a href="single-product.html">Learn More</a> </p>
+                                                        <a href="/product/detail">Learn More</a> </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -573,14 +573,14 @@
                                     <div class="single-list-product">
                                         <div class="col-sm-4">
                                             <div class="list-product-img">
-                                                <a href="single-product.html">
+                                                <a href="/product/detail">
                                                     <img src="../static/img/product/4.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="list-product-info">
-                                                <a href="single-product.html" class="list-product-name"> Cras neque metus</a>
+                                                <a href="/product/detail" class="list-product-name"> Cras neque metus</a>
                                                 <div class="price-rating">
                                                     <span class="old-price">$700.00</span>
                                                     <span>$800.00</span>
@@ -596,7 +596,7 @@
                                                 </div>
                                                 <div class="list-product-details">
                                                     <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nul
-                                                        <a href="single-product.html">Learn More</a> </p>
+                                                        <a href="/product/detail">Learn More</a> </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -604,14 +604,14 @@
                                     <div class="single-list-product">
                                         <div class="col-sm-4">
                                             <div class="list-product-img">
-                                                <a href="single-product.html">
+                                                <a href="/product/detail">
                                                     <img src="../static/img/product/5.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="list-product-info">
-                                                <a href="single-product.html" class="list-product-name"> Cras neque metus</a>
+                                                <a href="/product/detail" class="list-product-name"> Cras neque metus</a>
                                                 <div class="price-rating">
                                                     <span class="old-price">$700.00</span>
                                                     <span>$800.00</span>
@@ -627,7 +627,7 @@
                                                 </div>
                                                 <div class="list-product-details">
                                                     <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nul
-                                                        <a href="single-product.html">Learn More</a> </p>
+                                                        <a href="/product/detail">Learn More</a> </p>
                                                 </div>
                                             </div>
                                         </div>
