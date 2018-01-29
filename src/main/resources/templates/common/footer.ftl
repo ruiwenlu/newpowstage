@@ -6,15 +6,15 @@
             <div class="col-md-3 col-sm-4">
                 <div class="footer-contact">
                     <img src="../static/img/logo-white.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                    <p>公司一句话简介</p>
                     <ul class="address">
                         <li>
                             <span class="fa fa-fax"></span>
-                            (800) 123 456 789
+                            传真
                         </li>
                         <li>
                             <span class="fa fa-phone"></span>
-                            (800) 123 456 789
+                            电话
                         </li>
                         <li>
                             <span class="fa fa-envelope-o"></span>
@@ -63,15 +63,17 @@
             <div class="col-md-3 col-sm-4">
                 <div class="footer-support">
                     <div class="footer-title">
-                        <h3>Our support</h3>
+                        <h3>网站导航</h3>
                     </div>
                     <div class="footer-menu">
                         <ul>
-                            <li><a href="#">Sitemap</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Your Account</a></li>
-                            <li><a href="#">Advanced Search</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="/">首页</a></li>
+                            <li><a href="/about">关于我们</a></li>
+                            <li><a href="/product">产品中心</a></li>
+                            <li><a href="/case">实际案例</a></li>
+                            <li><a href="/news">新闻中心</a></li>
+                            <li><a href="/support">技术支持</a></li>
+                            <li><a href="/contact">联系我们</a></li>
                         </ul>
                     </div>
                 </div>
@@ -79,7 +81,7 @@
             <div class="col-md-3 col-sm-4">
                 <div class="footer-info">
                     <div class="footer-title">
-                        <h3>Our information</h3>
+                        <h3>相关链接</h3>
                     </div>
                     <div class="footer-menu">
                         <ul>

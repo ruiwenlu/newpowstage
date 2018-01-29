@@ -52,7 +52,7 @@
                 <div class="col-md-3">
                     <div class="product-menu">
                         <div class="menu-title">
-                            <h2>Best seller <strong>Products</strong></h2>
+                            <h2> <strong>热销产品</strong></h2>
                         </div>
                         <div class="side-menu">
                             <!-- Nav tabs -->
@@ -2826,7 +2826,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-heading">
-                    <h2>FEATURED PRODUCTS</h2>
+                    <h2>特色产品</h2>
                 </div>
             </div>
         </div>
@@ -3199,7 +3199,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-heading">
-                    <h2>NEW PRODUCTS</h2>
+                    <h2>我们的新产品</h2>
                 </div>
             </div>
         </div>
@@ -3490,7 +3490,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="blog-heading">
-                    <h2>From <strong> The Blog</strong></h2>
+                    <h2><strong>新闻快讯</strong></h2>
                 </div>
             </div>
         </div>
