@@ -93,7 +93,7 @@
                 <div class="col-md-3">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="../static/img/logo.png" alt="">
+                            <img src="../static/img/新势力舞台.jpg" alt="">
                         </a>
                     </div>
                 </div>

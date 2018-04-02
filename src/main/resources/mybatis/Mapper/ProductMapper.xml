@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newpower.stage.dao.ProductDao">
+
+    <resultMap type="com.newpower.stage.model.SimpleProduct" id="simpleProductMap">
+        <result property="productId" column="id"/>
+        <result property="nameZH" column="name_zh"/>
+        <result property="nameEN" column="name_en"/>
+        <result property="deliveryTime" column="delivery_time"/>
+        <result property="stock" column="stock"/>
+        <result property="salePrice" column="sale_price"/>
+        <result property="marketPrice" column="market_price"/>
+        <result property="stars" column="stars"/>
+        <result property="saleType" column="sale_type"/>
+        <!-- property表示集合类型属性名称，ofType表示集合中的对象是什么类型 -->
+        <collection property="mainPics" ofType="java.lang.String">
+            <result property="picUrl" column="pic_url"/>
+        </collection>
+    </resultMap>
+
+    <select id="getProductsByPromotionType" resultMap="simpleProductMap">
+        select pr.id,pr.name_zh,pr.name_en,pr.delivery_time,
+        pr.stock,pr.sale_price,pr.market_price,pr.stars as stars,pr.sale_type,pi.pic_url
+        from product_promotion pp
+        join product pr on pr.id = pp.product_id
+        join picture pi on pp.product_id = pi.busz_id and pi.busz_type = 0 and pi.pic_type = 2
+        where pp.promotion_type=#{promotionType}
+        GROUP BY pr.id,pi.seq
+        ORDER BY pr.id,pi.seq;
+    </select>
+</mapper>

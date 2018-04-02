@@ -1,11 +1,16 @@
 package com.newpower.stage.controller;
 
 import com.newpower.stage.constants.FTLViewConstants;
-import com.newpower.stage.service.GetHello;
+import com.newpower.stage.enums.PromotionProductEnum;
+import com.newpower.stage.model.SimpleProduct;
+import com.newpower.stage.service.CarouselFigureService;
+import com.newpower.stage.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
 
 /**
  * Created by Administrator on 2017/12/3.
@@ -14,12 +19,24 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomePageController {
 
     @Autowired
-    private GetHello getHello;
+    private CarouselFigureService carouselFigureService;
+    @Autowired
+    private ProductService productService;
+
     @GetMapping("")
-    public String getString(Model model){
-        String hello = getHello.getHello();
-        model.addAttribute("hello", hello);
-        return FTLViewConstants.HOMEPAGE;
+    public ModelAndView getString(){
+        List<String> carouselFigures = carouselFigureService.getCarouselFigures();
+        ModelAndView modelAndView = new ModelAndView(FTLViewConstants.HOMEPAGE);
+        modelAndView.addObject("carouselFigures", carouselFigures);
+
+        //0推荐商品,1特色商品,2新款商品
+        List<SimpleProduct> featureProducts = productService.getProductsByPromotionType(PromotionProductEnum.FEATURE_PRODUCT.getId());
+        modelAndView.addObject("featureProducts", featureProducts);
+
+        List<SimpleProduct> newProducts = productService.getProductsByPromotionType(PromotionProductEnum.NEW_PRODUCT.getId());
+        modelAndView.addObject("newProducts", newProducts);
+        return modelAndView;
     }
+
 
 }
