@@ -659,7 +659,7 @@ body {
 
 .slider-area {
     position: relative;
-    top: -80px;
+    top: 0px;
 }
 .preview-2 .nivo-controlNav {
     bottom: 10px;

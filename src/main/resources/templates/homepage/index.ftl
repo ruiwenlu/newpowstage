@@ -15,7 +15,11 @@
     <div class="bend niceties preview-2">
         <div id="nivoslider" class="slides">
         [#list carouselFigures as carouselFigure]
-            <img src="${carouselFigure}" alt="" title="#slider-direction-1"  />
+            [#if carouselFigure_index == 0]
+                <img src="${carouselFigure}" alt="" title="#slider-direction-1"  />
+            [#elseif carouselFigure_index = 1]
+                <img src="${carouselFigure}" alt="" title="#slider-direction-2"  />
+            [/#if]
         [/#list]
         </div>
         <!-- direction 1 -->
@@ -23,10 +27,12 @@
             <div class="slider-progress"></div>
             <div class="slider-content t-lfl s-tb slider-1">
                 <div class="title-container s-tb-c title-compress">
-                    <h1 class="title1">Sale products</h1>
-                    <h2 class="title2" >nike Ari max 2015</h2>
-                    <h3 class="title3" >Lorem Ipsum is simply dummy text of the printing</h3>
-                    <a href="#"><span>read more</span></a>
+                [#--<h1 class="title1">过硬产品</h1>--]
+                    <h2 class="title2" >铝合金舞台桁架</h2>
+                    <h3 class="title3" >如果你有一乡的眼光，你可以做一乡的生意;</h3>
+                    <h3 class="title3" >如果你有一县的眼光，你可以做一县的生意;</h3>
+                    <h3 class="title3" >如果你有天下的眼光，你可能做天下的生意。——胡雪岩</h3>
+                    <a href="/product"><span>查看详情</span></a>
                 </div>
             </div>
         </div>
@@ -35,10 +41,10 @@
             <div class="slider-progress"></div>
             <div class="slider-content t-lfl s-tb slider-2">
                 <div class="title-container s-tb-c">
-                    <h1 class="title1">Sale products</h1>
-                    <h2 class="title2" >GET UP TO 50% SALE</h2>
-                    <h3 class="title3" >Lorem Ipsum is simply dummy text of the printing</h3>
-                    <a href="#"><span>read more</span></a>
+                    <h1 class="title1">礼·道</h1>
+                    <h2 class="title2" >以义为利，利缘义取</h2>
+                    <h3 class="title3" >唯诚待人，人自怀服，任人御物，物终不亲</h3>
+                    <a href="/product"><span>查看详情</span></a>
                 </div>
             </div>
         </div>
@@ -84,15 +90,16 @@
                                             </div>
                                             <div class="product-img">
                                                 <a href="/product/detail">
-                                                    <img src="../static/img/product/1.png" alt="" class="primary-img">
-                                                    <img src="../static/img/product/2.png" alt="" class="secondary-img">
+                                                    <img src="../static/img/product/钢铁舞台-1.jpg" alt="" class="primary-img">
+                                                    <img src="../static/img/product/钢铁舞台-1.jpg" alt="" class="secondary-img">
                                                 </a>
                                             </div>
                                             <div class="product-name">
-                                                <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
+                                                <a href="/product/detail" title="钢铁舞台">舞台的具体名字</a>
                                             </div>
                                             <div class="price-rating">
-                                                <span>$170.00</span>
+                                                <span class="old-price">￥800.00</span>
+                                                <span>￥700.00</span>
                                                 <div class="ratings">
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
@@ -116,16 +123,16 @@
                                             </div>
                                             <div class="product-img">
                                                 <a href="/product/detail">
-                                                    <img src="../static/img/product/1.png" alt="" class="primary-img">
-                                                    <img src="../static/img/product/2.png" alt="" class="secondary-img">
+                                                    <img src="../static/img/product/钢铁舞台-1.jpg" alt="" class="primary-img">
+                                                    <img src="../static/img/product/钢铁舞台-1.jpg" alt="" class="secondary-img">
                                                 </a>
                                             </div>
                                             <div class="product-name">
-                                                <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
+                                                <a href="/product/detail" title="钢铁舞台">舞台的具体名字</a>
                                             </div>
                                             <div class="price-rating">
-                                                <span class="old-price">$700.00</span>
-                                                <span>$800.00</span>
+                                                <span class="old-price">￥800.00</span>
+                                                <span>￥700.00</span>
                                                 <div class="ratings">
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
@@ -151,12 +158,12 @@
                                             </div>
                                             <div class="product-img">
                                                 <a href="/product/detail">
-                                                    <img src="../static/img/product/3.png" alt="" class="primary-img">
-                                                    <img src="../static/img/product/4.png" alt="" class="secondary-img">
+                                                    <img src="../static/img/product/钢铁舞台-1.jpg" alt="" class="primary-img">
+                                                    <img src="../static/img/product/钢铁舞台-1.jpg" alt="" class="secondary-img">
                                                 </a>
                                             </div>
                                             <div class="product-name">
-                                                <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
+                                                <a href="/product/detail" title="钢铁舞台">舞台的具体名字</a>
                                             </div>
                                             <div class="price-rating">
                                                 <span class="old-price">$700.00</span>
@@ -184,8 +191,8 @@
                                             </div>
                                             <div class="product-img">
                                                 <a href="/product/detail">
-                                                    <img src="../static/img/product/9.png" alt="" class="primary-img">
-                                                    <img src="../static/img/product/10.png" alt="" class="secondary-img">
+                                                    <img src="../static/img/product/钢铁舞台-1.jpg" alt="" class="primary-img">
+                                                    <img src="../static/img/product/钢铁舞台-1.jpg" alt="" class="secondary-img">
                                                 </a>
                                             </div>
                                             <div class="product-name">
@@ -219,8 +226,8 @@
                                             </div>
                                             <div class="product-img">
                                                 <a href="/product/detail">
-                                                    <img src="../static/img/product/5.png" alt="" class="primary-img">
-                                                    <img src="../static/img/product/6.png" alt="" class="secondary-img">
+                                                    <img src="../static/img/product/钢铁舞台-1.jpg" alt="" class="primary-img">
+                                                    <img src="../static/img/product/钢铁舞台-1.jpg" alt="" class="secondary-img">
                                                 </a>
                                             </div>
                                             <div class="product-name">
@@ -251,8 +258,8 @@
                                             </div>
                                             <div class="product-img">
                                                 <a href="/product/detail">
-                                                    <img src="../static/img/product/11.png" alt="" class="primary-img">
-                                                    <img src="../static/img/product/12.png" alt="" class="secondary-img">
+                                                    <img src="../static/img/product/钢铁舞台-1.jpg" alt="" class="primary-img">
+                                                    <img src="../static/img/product/钢铁舞台-1.jpg" alt="" class="secondary-img">
                                                 </a>
                                             </div>
                                             <div class="product-name">
