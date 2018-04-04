@@ -1,6 +1,7 @@
 package com.newpower.stage.dao;
 
-import com.newpower.stage.model.SimpleProduct;
+import com.newpower.stage.model.BestSellerProductDto;
+import com.newpower.stage.model.SimpleProductDto;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
@@ -10,5 +11,7 @@ import java.util.List;
  */
 public interface ProductDao {
 
-    List<SimpleProduct> getProductsByPromotionType(@Param("promotionType") Integer promotionType);
+    List<SimpleProductDto> getProductsByPromotionType(@Param("promotionType") Integer promotionType);
+
+    List<BestSellerProductDto> getBestSellerProductDtos();
 }

@@ -1,13 +1,12 @@
 package com.newpower.stage.model;
 
-import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
 /**
  * Created by Administrator on 2018/3/24.
  */
-public class ProductDto extends SimpleProduct{
+public class ProductDto extends SimpleProductDto {
 
 
     private String description;

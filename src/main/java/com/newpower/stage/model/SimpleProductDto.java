@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2018/3/24.
  */
-public class SimpleProduct {
+public class SimpleProductDto {
 
     private Integer productId;
     private String nameZH;

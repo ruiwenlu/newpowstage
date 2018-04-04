@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.newpower.stage.dao.ProductDao">
 
-    <resultMap type="com.newpower.stage.model.SimpleProduct" id="simpleProductMap">
+    <resultMap type="com.newpower.stage.model.SimpleProductDto" id="simpleProductMap">
         <result property="productId" column="id"/>
         <result property="nameZH" column="name_zh"/>
         <result property="nameEN" column="name_en"/>
@@ -29,5 +29,34 @@
         where pp.promotion_type=#{promotionType}
         GROUP BY pr.id,pi.seq
         ORDER BY pr.id,pi.seq;
+    </select>
+
+    <resultMap type="com.newpower.stage.model.BestSellerProductDto" id="BestSellerProductMap">
+        <result property="bestSellerName" column="class_name"/>
+        <collection property='simpleProductDtos' ofType="com.newpower.stage.model.SimpleProductDto">
+            <result property="productId" column="id"/>
+            <result property="nameZH" column="name_zh"/>
+            <result property="nameEN" column="name_en"/>
+            <result property="deliveryTime" column="delivery_time"/>
+            <result property="stock" column="stock"/>
+            <result property="salePrice" column="sale_price"/>
+            <result property="marketPrice" column="market_price"/>
+            <result property="stars" column="stars"/>
+            <result property="saleType" column="sale_type"/>
+            <!-- property表示集合类型属性名称，ofType表示集合中的对象是什么类型 -->
+            <collection property="mainPics" ofType="java.lang.String">
+                <result property="picUrl" column="pic_url"/>
+            </collection>
+        </collection>
+    </resultMap>
+    <select id="getBestSellerProductDtos" resultMap="BestSellerProductMap">
+        select bs.class_name,pr.id,pr.name_zh,pr.name_en,pr.delivery_time,
+        pr.stock,pr.sale_price,pr.market_price,pr.stars as stars,pr.sale_type,pi.pic_url
+        from best_seller bs
+        join best_seller_product bsp on bs.id = bsp.best_seller_id
+        join product pr on bsp.product_id = pr.id
+        join picture pi on pi.busz_id = pr.id and pi.busz_type = 0 and pi.pic_type = 2
+        GROUP BY pr.id,pi.seq
+        ORDER BY bs.seq,pr.id,pi.seq;
     </select>
 </mapper>
