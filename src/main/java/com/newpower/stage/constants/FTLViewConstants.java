@@ -5,9 +5,10 @@ package com.newpower.stage.constants;
  */
 public class FTLViewConstants {
 
-    public static String HOMEPAGE = "/homepage/index";
+    public static final String HOMEPAGE_BEST_SELLER = "/homepage/best_seller";
+    public static final String HOMEPAGE = "/homepage/index";
 
-    public static String NEWS = "/news/news";
+    public static final String NEWS = "/news/news";
     public static final String NEWS_DETAIL = "/news/news_detail";
 
     public static final String ABOUT_US = "/about/about_us";

@@ -1,6 +1,7 @@
 package com.newpower.stage.service.impl;
 
 import com.newpower.stage.dao.ProductDao;
+import com.newpower.stage.model.BestSellerDto;
 import com.newpower.stage.model.BestSellerProductDto;
 import com.newpower.stage.model.SimpleProductDto;
 import com.newpower.stage.service.ProductService;

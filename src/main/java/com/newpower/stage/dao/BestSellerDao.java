@@ -1,18 +1,16 @@
-package com.newpower.stage.service;
+package com.newpower.stage.dao;
 
 import com.newpower.stage.model.BestSellerDto;
 import com.newpower.stage.model.BestSellerProductDto;
 import com.newpower.stage.model.SimpleProductDto;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by Administrator on 2018/3/24.
  */
-public interface ProductService {
+public interface BestSellerDao {
 
-    List<SimpleProductDto> getProductsByPromotionType(Integer type);
-
-    List<BestSellerProductDto> getBestSellerProductDtos();
-
+    List<BestSellerDto> getBestSellerDtos();
 }

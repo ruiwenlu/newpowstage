@@ -63,15 +63,22 @@
                         </div>
                         <div class="side-menu">
                             <!-- Nav tabs -->
+                            [#--<ul class="tab-navigation" role="tablist">--]
+                                [#--<li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Women</a></li>--]
+                                [#--<li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">men</a></li>--]
+                                [#--<li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Footwear</a></li>--]
+                                [#--<li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Jewellery</a></li>--]
+                                [#--<li role="presentation"><a href="#tab5" aria-controls="tab5" role="tab" data-toggle="tab">Accessories</a></li>--]
+                                [#--<li role="presentation"><a href="#tab6" aria-controls="tab6" role="tab" data-toggle="tab">Dresses</a></li>--]
+                                [#--<li role="presentation"><a href="#tab7" aria-controls="tab7" role="tab" data-toggle="tab">shoes</a></li>--]
+                                [#--<li role="presentation"><a href="#tab8" aria-controls="tab8" role="tab" data-toggle="tab">Handbags</a></li>--]
+                                [#--<li> <img src="../static/img/banner/banner-5.jpg" alt=""> </li>--]
+                            [#--</ul>--]
                             <ul class="tab-navigation" role="tablist">
-                                <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Women</a></li>
-                                <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">men</a></li>
-                                <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Footwear</a></li>
-                                <li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Jewellery</a></li>
-                                <li role="presentation"><a href="#tab5" aria-controls="tab5" role="tab" data-toggle="tab">Accessories</a></li>
-                                <li role="presentation"><a href="#tab6" aria-controls="tab6" role="tab" data-toggle="tab">Dresses</a></li>
-                                <li role="presentation"><a href="#tab7" aria-controls="tab7" role="tab" data-toggle="tab">shoes</a></li>
-                                <li role="presentation"><a href="#tab8" aria-controls="tab8" role="tab" data-toggle="tab">Handbags</a></li>
+                                [#list bestSellerDtos as bestSellerDto]
+                                    [#--<li role="presentation" [#if bestSellerDto.bestSellerId == 1]class="active"[/#if]><a href="javascript:doPage(1);" aria-controls="tab${bestSellerDto.bestSellerId}" role="tab" data-toggle="tab">${bestSellerDto.bestSellerName}</a></li>--]
+                                    <li [#if bestSellerDto.bestSellerId == 1]class="active"[/#if]><a href="javascript:doPage(1);" >${bestSellerDto.bestSellerName}</a></li>
+                                [/#list]
                                 <li> <img src="../static/img/banner/banner-5.jpg" alt=""> </li>
                             </ul>
                         </div>
@@ -80,6 +87,7 @@
                 <div class="col-md-9">
                     <div class="row">
                         <!-- Tab panes -->
+                        [#--[#include "/homepage/best_seller.ftl" /]--]
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade in active" id="tab1">
                                 <div class="product-slider">
@@ -3043,5 +3051,22 @@
 </div>
 <!-- blog area end -->
 [#include "/common/footer.ftl" /]
+<script type="text/javascript">
+    function doPage(n){
+        $('.tab-content').html("");
+        $.ajax({
+            type:"GET",
+            url:"http://localhost:8080/product/bestSeller/2",
+            data:{pageNo:n},
+            dataType: "html",   //返回值类型
+            cache:false,
+            success:function(data){
+                //var json = eval('('+msg+')');//拼接的json串
+                $('.tab-content').html(data);
+            },
+            error:function(error){alert(error);}
+        });
+    }
+</script>
 </body>
 </html>
