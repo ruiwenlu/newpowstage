@@ -43,6 +43,9 @@ public class HomePageController {
         List<BestSellerDto> bestSellerDtos = bestSellerService.getBestSellerDtos();
         modelAndView.addObject("bestSellerDtos", bestSellerDtos);
 
+        List<SimpleProductDto> bestSellerProductDtos = bestSellerService.getProductsByBestSellerId(1);
+        modelAndView.addObject("bestSellerProductDtos", bestSellerProductDtos);
+
         //0推荐商品,1特色商品,2新款商品
         List<SimpleProductDto> featureProducts = productService.getProductsByPromotionType(PromotionProductEnum.FEATURE_PRODUCT.getId());
         modelAndView.addObject("featureProducts", featureProducts);
@@ -62,9 +65,10 @@ public class HomePageController {
 //    }
 
     @GetMapping("/product/bestSeller/{bestSellerId}")
-    public ModelAndView getBestSeller(@PathVariable("bestSellerId") String bestSellerId){
+    public ModelAndView getBestSeller(@PathVariable("bestSellerId") Integer bestSellerId){
         ModelAndView modelAndView = new ModelAndView(FTLViewConstants.HOMEPAGE_BEST_SELLER);
-        modelAndView.addObject("bestSellerId", bestSellerId);
+        List<SimpleProductDto> bestSellerProductDtos = bestSellerService.getProductsByBestSellerId(bestSellerId);
+        modelAndView.addObject("bestSellerProductDtos", bestSellerProductDtos);
         return modelAndView;
     }
 }

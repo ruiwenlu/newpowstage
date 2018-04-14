@@ -1,6 +1,7 @@
 package com.newpower.stage.dao;
 
 import com.newpower.stage.model.BestSellerProductDto;
+import com.newpower.stage.model.ProductDto;
 import com.newpower.stage.model.SimpleProductDto;
 import org.apache.ibatis.annotations.*;
 
@@ -14,4 +15,6 @@ public interface ProductDao {
     List<SimpleProductDto> getProductsByPromotionType(@Param("promotionType") Integer promotionType);
 
     List<BestSellerProductDto> getBestSellerProductDtos();
+
+    ProductDto getProductDtoByProductId(@Param("productId") Integer productId);
 }

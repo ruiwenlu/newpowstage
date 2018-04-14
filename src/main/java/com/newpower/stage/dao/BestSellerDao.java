@@ -13,4 +13,6 @@ import java.util.List;
 public interface BestSellerDao {
 
     List<BestSellerDto> getBestSellerDtos();
+
+    List<SimpleProductDto> getProductsByBestSellerId(@Param("bestSellerId") Integer bestSellerId);
 }

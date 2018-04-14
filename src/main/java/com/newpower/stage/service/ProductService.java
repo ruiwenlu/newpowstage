@@ -2,6 +2,7 @@ package com.newpower.stage.service;
 
 import com.newpower.stage.model.BestSellerDto;
 import com.newpower.stage.model.BestSellerProductDto;
+import com.newpower.stage.model.ProductDto;
 import com.newpower.stage.model.SimpleProductDto;
 import java.util.List;
 import java.util.Map;
@@ -15,4 +16,5 @@ public interface ProductService {
 
     List<BestSellerProductDto> getBestSellerProductDtos();
 
+    ProductDto getProductDtoByProductId(Integer productId);
 }

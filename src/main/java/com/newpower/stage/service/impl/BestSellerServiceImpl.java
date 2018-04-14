@@ -2,6 +2,7 @@ package com.newpower.stage.service.impl;
 
 import com.newpower.stage.dao.BestSellerDao;
 import com.newpower.stage.model.BestSellerDto;
+import com.newpower.stage.model.SimpleProductDto;
 import com.newpower.stage.service.BestSellerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,5 +21,11 @@ public class BestSellerServiceImpl implements BestSellerService {
     @Override
     public List<BestSellerDto> getBestSellerDtos() {
         return bestSellerDao.getBestSellerDtos();
+    }
+
+    @Override
+    public List<SimpleProductDto> getProductsByBestSellerId(Integer bestSellerId) {
+        List<SimpleProductDto> simpleProductDtos = bestSellerDao.getProductsByBestSellerId(bestSellerId);
+        return simpleProductDtos;
     }
 }

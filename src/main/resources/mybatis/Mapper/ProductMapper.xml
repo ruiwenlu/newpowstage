@@ -59,4 +59,46 @@
         GROUP BY pr.id,pi.seq
         ORDER BY bs.seq,pr.id,pi.seq;
     </select>
+
+    <resultMap type="com.newpower.stage.model.ProductDto" id="ProductDtoMap">
+        <result property="productId" column="id"/>
+        <result property="nameZH" column="name_zh"/>
+        <result property="nameEN" column="name_en"/>
+        <result property="deliveryTime" column="delivery_time"/>
+        <result property="stock" column="stock"/>
+        <result property="salePrice" column="sale_price"/>
+        <result property="marketPrice" column="market_price"/>
+        <result property="stars" column="stars"/>
+        <result property="saleType" column="sale_type"/>
+        <result property="description" column="description"/>
+        <result property="reviews" column="reviews"/>
+        <result property="categoryId" column="category_id"/>
+        <result property="categoryName" column="category_name"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <!-- property表示集合类型属性名称，ofType表示集合中的对象是什么类型 -->
+        <collection property="mainPics" ofType="java.lang.String">
+            <result property="picUrl1" column="pic_url1"/>
+        </collection>
+        <collection property="largePics" ofType="java.lang.String">
+            <result property="picUrl2" column="pic_url2"/>
+        </collection>
+        <collection property="smallPics" ofType="java.lang.String">
+            <result property="picUrl3" column="pic_url3"/>
+        </collection>
+    </resultMap>
+    <select id="getProductDtoByProductId" resultMap="ProductDtoMap">
+        select pr.id,pr.name_zh,pr.name_en,pr.delivery_time,
+        pr.stock,pr.sale_price,pr.market_price,pr.stars as stars,pr.sale_type,pr.description,pr.reviews,
+        c.id as category_id,c.category_name,pr.create_time,pr.update_time,pi1.pic_url as pic_url1,pi2.pic_url as pic_url2
+        ,pi3.pic_url as pic_url3
+        from product pr
+        join product_category pc on pr.id = pc.product_id
+        join category c on c.id = pc.category_id
+        join picture pi1 on pr.id = pi1.busz_id and pi1.busz_type = 0 and pi1.pic_type = 2
+        join picture pi2 on pr.id = pi2.busz_id and pi2.busz_type = 0 and pi2.pic_type = 1
+        join picture pi3 on pr.id = pi3.busz_id and pi3.busz_type = 0 and pi3.pic_type = 3
+        where pr.id=#{productId}
+        ORDER BY pi1.seq,pi2.seq,pi3.seq;
+    </select>
 </mapper>

@@ -63,4 +63,15 @@
     <select id="getBestSellerDtos" resultType="com.newpower.stage.model.BestSellerDto">
         select bs.best_seller_id as bestSellerId,bs.class_name as bestSellerName from best_seller bs ORDER by seq
     </select>
+
+    <select id="getProductsByBestSellerId" resultMap="simpleProductMap">
+        select pr.id,pr.name_zh,pr.name_en,pr.delivery_time,
+        pr.stock,pr.sale_price,pr.market_price,pr.stars as stars,pr.sale_type,pi.pic_url
+        from best_seller_product bs
+        join product pr on pr.id = bs.product_id
+        join picture pi on bs.product_id = pi.busz_id and pi.busz_type = 0 and pi.pic_type = 2
+        where bs.best_seller_id=#{bestSellerId}
+        GROUP BY pr.id,pi.seq
+        ORDER BY pr.id,pi.seq;
+    </select>
 </mapper>
