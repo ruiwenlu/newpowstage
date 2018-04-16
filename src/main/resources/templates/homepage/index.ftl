@@ -62,26 +62,12 @@
                             <h2> <strong>热销产品</strong></h2>
                         </div>
                         <div class="side-menu">
-                            <!-- Nav tabs -->
-                            [#--<ul class="tab-navigation" role="tablist">--]
-                                [#--<li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Women</a></li>--]
-                                [#--<li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">men</a></li>--]
-                                [#--<li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Footwear</a></li>--]
-                                [#--<li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Jewellery</a></li>--]
-                                [#--<li role="presentation"><a href="#tab5" aria-controls="tab5" role="tab" data-toggle="tab">Accessories</a></li>--]
-                                [#--<li role="presentation"><a href="#tab6" aria-controls="tab6" role="tab" data-toggle="tab">Dresses</a></li>--]
-                                [#--<li role="presentation"><a href="#tab7" aria-controls="tab7" role="tab" data-toggle="tab">shoes</a></li>--]
-                                [#--<li role="presentation"><a href="#tab8" aria-controls="tab8" role="tab" data-toggle="tab">Handbags</a></li>--]
-                                [#--<li> <img src="../static/img/banner/banner-5.jpg" alt=""> </li>--]
-                            [#--</ul>--]
-                            <input class="hidden" id = "bestSellerId" value="1">
                             [#macro bestSeller_id bestSellerId=1]
                                 bestSellerId
                             [/#macro]
                             <ul class="tab-navigation" role="tablist">
                                 [#list bestSellerDtos as bestSellerDto]
-                                    [#--<li role="presentation" [#if bestSellerDto.bestSellerId == 1]class="active"[/#if]><a href="javascript:doPage(1);" aria-controls="tab${bestSellerDto.bestSellerId}" role="tab" data-toggle="tab">${bestSellerDto.bestSellerName}</a></li>--]
-                                    <li ><a href="javascript:doPage(${bestSellerDto.bestSellerId});" >${bestSellerDto.bestSellerName}</a></li>
+                                    <li class="bestSeller" id="bestSellerId${bestSellerDto.bestSellerId}"><a href="javascript:doPage(${bestSellerDto.bestSellerId});" >${bestSellerDto.bestSellerName}</a></li>
                                 [/#list]
                                 <li> <img src="../static/img/banner/banner-5.jpg" alt=""> </li>
                             </ul>
@@ -317,6 +303,7 @@
 <script type="text/javascript">
     function doPage(n){
         $('.tab-content').html("");
+        $('.bestSeller').removeClass("active");
         $.ajax({
             type:"GET",
             url:"http://localhost:8080/product/bestSeller/"+n,
@@ -324,6 +311,7 @@
             cache:false,
             success:function(data){
                 $('.tab-content').html(data);
+                $('#bestSellerId'+n).addClass("active");
             },
             error:function(error){alert(error);}
         });
