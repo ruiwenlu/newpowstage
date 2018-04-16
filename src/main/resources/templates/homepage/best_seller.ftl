@@ -52,33 +52,12 @@
         </div>
     </div>
 </div>
-<!-- jquery
-        ============================================ -->
-<script src="../static/js/vendor/jquery-1.12.1.min.js"></script>
-<!-- bootstrap JS
-        ============================================ -->
-<script src="../static/js/bootstrap.min.js"></script>
-<!-- price-slider JS
-        ============================================ -->
-<script src="../static/js/jquery-price-slider.js"></script>
-<!-- nivoslider JS
-        ============================================ -->
-<script src="../static/lib/js/jquery.nivo.slider.js"></script>
 <!-- meanmenu JS
         ============================================ -->
 <script src="../static/js/jquery.meanmenu.js"></script>
 <!-- owl.carousel JS
         ============================================ -->
 <script src="../static/js/owl.carousel.min.js"></script>
-<!-- elevatezoom JS
-        ============================================ -->
-<script src="../static/js/jquery.elevatezoom.js"></script>
-<!-- scrollUp JS
-        ============================================ -->
-<script src="../static/js/jquery.scrollUp.min.js"></script>
-<!-- plugins JS
-        ============================================ -->
-<script src="../static/js/plugins.js"></script>
 <!-- main JS
         ============================================ -->
 <script src="../static/js/main.js"></script>
