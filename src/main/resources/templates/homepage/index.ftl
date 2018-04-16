@@ -317,16 +317,12 @@
 <script type="text/javascript">
     function doPage(n){
         $('.tab-content').html("");
-//        $('#bestSellerId').val=n;
         $.ajax({
             type:"GET",
             url:"http://localhost:8080/product/bestSeller/"+n,
-//            data:data,
             dataType: "html",   //返回值类型
             cache:false,
             success:function(data){
-                //var json = eval('('+msg+')');//拼接的json串
-                alert(data);
                 $('.tab-content').html(data);
             },
             error:function(error){alert(error);}
