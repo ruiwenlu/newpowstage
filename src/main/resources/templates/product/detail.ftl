@@ -34,68 +34,68 @@
             <div class="col-sm-6">
                 <div class="single-product-img">
                     <div class="single-pro-main-image">
-                        <a href="#"><img id="optima_zoom" src="../static/img/product/1.png" data-zoom-image="../static/img/product/1.png" alt="optima"/></a>
+                        <a href="#"><img id="optima_zoom" src="${domainUrl}/static/img/product/1.png" data-zoom-image="${domainUrl}/static/img/product/1.png" alt="optima"/></a>
                     </div>
                 </div>
                 <div class="product-page-slider hidden-xs">
                     <div class="single-product-slider">
                         <a href="#">
-                            <img src="../static/img/product/27.png" alt="">
+                            <img src="${domainUrl}/static/img/product/27.png" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#">
-                            <img src="../static/img/product/28.png" alt="">
+                            <img src="${domainUrl}/static/img/product/28.png" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#">
-                            <img src="../static/img/product/29.png" alt="">
+                            <img src="${domainUrl}/static/img/product/29.png" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#">
-                            <img src="../static/img/product/30.png" alt="">
+                            <img src="${domainUrl}/static/img/product/30.png" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#">
-                            <img src="../static/img/product/31.png" alt="">
+                            <img src="${domainUrl}/static/img/product/31.png" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#">
-                            <img src="../static/img/product/32.png" alt="">
+                            <img src="${domainUrl}/static/img/product/32.png" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#">
-                            <img src="../static/img/product/27.png" alt="">
+                            <img src="${domainUrl}/static/img/product/27.png" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#">
-                            <img src="../static/img/product/28.png" alt="">
+                            <img src="${domainUrl}/static/img/product/28.png" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#">
-                            <img src="../static/img/product/29.png" alt="">
+                            <img src="${domainUrl}/static/img/product/29.png" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#">
-                            <img src="../static/img/product/30.png" alt="">
+                            <img src="${domainUrl}/static/img/product/30.png" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#">
-                            <img src="../static/img/product/31.png" alt="">
+                            <img src="${domainUrl}/static/img/product/31.png" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#">
-                            <img src="../static/img/product/32.png" alt="">
+                            <img src="${domainUrl}/static/img/product/32.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                     <div class="single-product-info">
                         <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis. </p>
                         <div class="share">
-                            <img src="../static/img/product/share.png" alt="">
+                            <img src="${domainUrl}/static/img/product/share.png" alt="">
                         </div>
                     </div>
                     <div class="action">
@@ -355,8 +355,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/25.png" alt="" class="primary-img">
-                                <img src="../static/img/product/26.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/25.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/26.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="list-product-info">
@@ -386,8 +386,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/23.png" alt="" class="primary-img">
-                                <img src="../static/img/product/24.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/23.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/24.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="list-product-info">
@@ -417,8 +417,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/21.png" alt="" class="primary-img">
-                                <img src="../static/img/product/22.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/21.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/22.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="list-product-info">
@@ -448,8 +448,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/19.png" alt="" class="primary-img">
-                                <img src="../static/img/product/20.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/19.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/20.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="list-product-info">
@@ -479,8 +479,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/17.png" alt="" class="primary-img">
-                                <img src="../static/img/product/18.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/17.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/18.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="list-product-info">
@@ -510,8 +510,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/15.png" alt="" class="primary-img">
-                                <img src="../static/img/product/16.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/15.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/16.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="list-product-info">
@@ -541,8 +541,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/13.png" alt="" class="primary-img">
-                                <img src="../static/img/product/14.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/13.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/14.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="list-product-info">
@@ -572,8 +572,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/11.png" alt="" class="primary-img">
-                                <img src="../static/img/product/12.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/11.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/12.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="list-product-info">
@@ -620,8 +620,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/25.png" alt="" class="primary-img">
-                                <img src="../static/img/product/26.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/25.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/26.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="product-price">
@@ -638,8 +638,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/23.png" alt="" class="primary-img">
-                                <img src="../static/img/product/24.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/23.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/24.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="product-price">
@@ -656,8 +656,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/21.png" alt="" class="primary-img">
-                                <img src="../static/img/product/22.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/21.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/22.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="product-price">
@@ -674,8 +674,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/19.png" alt="" class="primary-img">
-                                <img src="../static/img/product/20.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/19.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/20.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="product-price">
@@ -692,8 +692,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/17.png" alt="" class="primary-img">
-                                <img src="../static/img/product/18.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/17.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/18.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="product-price">
@@ -710,8 +710,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/15.png" alt="" class="primary-img">
-                                <img src="../static/img/product/16.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/15.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/16.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="product-price">
@@ -728,8 +728,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/13.png" alt="" class="primary-img">
-                                <img src="../static/img/product/14.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/13.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/14.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="product-price">
@@ -746,8 +746,8 @@
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="../static/img/product/11.png" alt="" class="primary-img">
-                                <img src="../static/img/product/12.png" alt="" class="secondary-img">
+                                <img src="${domainUrl}/static/img/product/11.png" alt="" class="primary-img">
+                                <img src="${domainUrl}/static/img/product/12.png" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="product-price">

@@ -4,6 +4,7 @@ import com.newpower.stage.constants.FTLViewConstants;
 import com.newpower.stage.model.ProductDto;
 import com.newpower.stage.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +16,8 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 public class ProductController {
+    @Value("${domainUrl}")
+    private String domainUrl;
     @Autowired
     private ProductService productService;
 
@@ -27,7 +30,7 @@ public class ProductController {
     public ModelAndView getProductDetail(@PathVariable("productId") Integer productId){
         ModelAndView modelAndView = new ModelAndView(FTLViewConstants.PRODUCT_DETAIL);
         ProductDto productDto = productService.getProductDtoByProductId(productId);
-
+        modelAndView.addObject("domainUrl",domainUrl);
         return modelAndView;
     }
 }

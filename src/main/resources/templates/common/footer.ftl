@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-4">
                 <div class="footer-contact">
-                    <img src="../static/img/logo-white.png" alt="">
+                    <img src="${domainUrl}/static/img/logo-white.png" alt="">
                     <p>公司一句话简介</p>
                     <ul class="address">
                         <li>
@@ -32,7 +32,7 @@
                         <div class="twitter-article">
                             <div class="twitter-img">
                                 <a href="#">
-                                    <img src="../static/img/twitter/twitter-1.png" alt="">
+                                    <img src="${domainUrl}/static/img/twitter/twitter-1.png" alt="">
                                 </a>
                             </div>
                             <div class="twitter-text">
@@ -46,7 +46,7 @@
                         <div class="twitter-article">
                             <div class="twitter-img">
                                 <a href="#">
-                                    <img src="../static/img/twitter/twitter-1.png" alt="">
+                                    <img src="${domainUrl}/static/img/twitter/twitter-1.png" alt="">
                                 </a>
                             </div>
                             <div class="twitter-text">
@@ -109,7 +109,7 @@
             </div>
             <div class="col-sm-6">
                 <div class="payment-icon">
-                    <img src="../static/img/payment.png" alt="">
+                    <img src="${domainUrl}/static/img/payment.png" alt="">
                 </div>
             </div>
         </div>
@@ -130,7 +130,7 @@
                     <div class="modal-product">
                         <div class="product-images">
                             <div class="main-image images">
-                                <img alt="" src="../static/img/product/quick-view.jpg">
+                                <img alt="" src="${domainUrl}/static/img/product/quick-view.jpg">
                             </div>
                         </div>
 
@@ -176,35 +176,35 @@
 
 <!-- jquery
         ============================================ -->
-<script src="../static/js/vendor/jquery-1.12.1.min.js"></script>
+<script src="${domainUrl}/static/js/vendor/jquery-1.12.1.min.js"></script>
 <!-- bootstrap JS
         ============================================ -->
-<script src="../static/js/bootstrap.min.js"></script>
+<script src="${domainUrl}/static/js/bootstrap.min.js"></script>
 <!-- wow JS
         ============================================ -->
-<script src="../static/js/wow.min.js"></script>
+<script src="${domainUrl}/static/js/wow.min.js"></script>
 <!-- price-slider JS
         ============================================ -->
-<script src="../static/js/jquery-price-slider.js"></script>
+<script src="${domainUrl}/static/js/jquery-price-slider.js"></script>
 <!-- nivoslider JS
         ============================================ -->
-<script src="../static/lib/js/jquery.nivo.slider.js"></script>
-<script src="../static/lib/home.js"></script>
+<script src="${domainUrl}/static/lib/js/jquery.nivo.slider.js"></script>
+<script src="${domainUrl}/static/lib/home.js"></script>
 <!-- meanmenu JS
         ============================================ -->
-<script src="../static/js/jquery.meanmenu.js"></script>
+<script src="${domainUrl}/static/js/jquery.meanmenu.js"></script>
 <!-- owl.carousel JS
         ============================================ -->
-<script src="../static/js/owl.carousel.min.js"></script>
+<script src="${domainUrl}/static/js/owl.carousel.min.js"></script>
 <!-- elevatezoom JS
         ============================================ -->
-<script src="../static/js/jquery.elevatezoom.js"></script>
+<script src="${domainUrl}/static/js/jquery.elevatezoom.js"></script>
 <!-- scrollUp JS
         ============================================ -->
-<script src="../static/js/jquery.scrollUp.min.js"></script>
+<script src="${domainUrl}/static/js/jquery.scrollUp.min.js"></script>
 <!-- plugins JS
         ============================================ -->
-<script src="../static/js/plugins.js"></script>
+<script src="${domainUrl}/static/js/plugins.js"></script>
 <!-- main JS
         ============================================ -->
-<script src="../static/js/main.js"></script>
+<script src="${domainUrl}/static/js/main.js"></script>

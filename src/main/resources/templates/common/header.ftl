@@ -50,12 +50,12 @@
                         </div>
                         <div class="cart-menu">
                             <ul>
-                                <li><a href="#"> <img src="../static/img/icon-cart.png" alt=""> <span>2</span> </a>
+                                <li><a href="#"> <img src="${domainUrl}/static/img/icon-cart.png" alt=""> <span>2</span> </a>
                                     <div class="cart-info">
                                         <ul>
                                             <li>
                                                 <div class="cart-img">
-                                                    <img src="../static/img/cart/1.png" alt="">
+                                                    <img src="${domainUrl}/static/img/cart/1.png" alt="">
                                                 </div>
                                                 <div class="cart-details">
                                                     <a href="#">Fusce aliquam</a>
@@ -66,7 +66,7 @@
                                             </li>
                                             <li>
                                                 <div class="cart-img">
-                                                    <img src="../static/img/cart/2.png" alt="">
+                                                    <img src="${domainUrl}/static/img/cart/2.png" alt="">
                                                 </div>
                                                 <div class="cart-details">
                                                     <a href="#">Fusce aliquam</a>
@@ -93,7 +93,7 @@
                 <div class="col-md-3">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="../static/img/新势力舞台.jpg" alt="">
+                            <img src="${domainUrl}/static/img/新势力舞台.jpg" alt="">
                         </a>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                                         </div>
                                         <div class="part-2">
                                             <a href="#">
-                                                <img src="../static/img/banner/menu-banner.png" alt="">
+                                                <img src="${domainUrl}/static/img/banner/menu-banner.png" alt="">
                                             </a>
                                         </div>
                                     </div>
