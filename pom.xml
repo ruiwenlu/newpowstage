@@ -24,6 +24,24 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <activatedProperties>dev</activatedProperties>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>production</id>
+            <properties>
+                <activatedProperties>production</activatedProperties>
+            </properties>
+        </profile>
+    </profiles>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -96,45 +114,29 @@
 		</dependency>
 		<!-- 日志配置结束 -->
 	</dependencies>
-	<profiles>
-		<profile>
-			<id>dev</id>
-			<properties>
-				<profileActive>dev</profileActive>
-			</properties>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-		</profile>
-		<profile>
-			<id>prod</id>
-			<properties>
-				<profileActive>prod</profileActive>
-			</properties>
-			<activation>
-				<activeByDefault>false</activeByDefault>
-			</activation>
-		</profile>
-	</profiles>
 
-	<build>
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-				<includes>
-					<include>application-${profileActive}.properties</include>
-					<include>application.properties</include>
-				</includes>
-				<filtering>true</filtering>
-			</resource>
-		</resources>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>application-*.properties</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>application-${activatedProperties}.properties</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
 </project>
