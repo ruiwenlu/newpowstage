@@ -11,6 +11,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 public class CustomWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new ConfigCenterInterceptor()).addPathPatterns("/**");
+        registry.addInterceptor(new ConfigCenterInterceptor()).addPathPatterns("/testtest/**");
     }
 }
