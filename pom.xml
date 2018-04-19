@@ -129,12 +129,16 @@
                 <excludes>
                     <exclude>application-*.properties</exclude>
                 </excludes>
+                <!--<includes>-->
+                    <!--<include>src/main/resources/static/fonts/**</include>-->
+                <!--</includes>-->
             </resource>
             <resource>
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
                 <includes>
                     <include>application-${activatedProperties}.properties</include>
+                    <!--<include>src/main/resources/static/fonts/**</include>-->
                 </includes>
             </resource>
         </resources>

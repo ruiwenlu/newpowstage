@@ -22,8 +22,10 @@ public class ProductController {
     private ProductService productService;
 
     @GetMapping("/product")
-    public String getProductList(Model model){
-        return FTLViewConstants.PRODUCT_LIST;
+    public ModelAndView getProductList(Model model){
+        ModelAndView modelAndView = new ModelAndView(FTLViewConstants.PRODUCT_LIST);
+        modelAndView.addObject("domainUrl",domainUrl);
+        return modelAndView;
     }
 
     @GetMapping("/product/detail/{productId}")
@@ -31,6 +33,7 @@ public class ProductController {
         ModelAndView modelAndView = new ModelAndView(FTLViewConstants.PRODUCT_DETAIL);
         ProductDto productDto = productService.getProductDtoByProductId(productId);
         modelAndView.addObject("domainUrl",domainUrl);
+        modelAndView.addObject("productDto",productDto);
         return modelAndView;
     }
 }

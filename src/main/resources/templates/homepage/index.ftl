@@ -69,7 +69,7 @@
                                 [#list bestSellerDtos as bestSellerDto]
                                     <li class="bestSeller" id="bestSellerId${bestSellerDto.bestSellerId}"><a href="javascript:doPage(${bestSellerDto.bestSellerId});" >${bestSellerDto.bestSellerName}</a></li>
                                 [/#list]
-                                <li> <img src="../static/img/banner/banner-5.jpg" alt=""> </li>
+                                <li> <img src="${domainUrl}static/img/banner/banner-5.jpg" alt=""> </li>
                             </ul>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
             <div class="col-md-12">
                 <div class="big-banner">
                     <a href="#">
-                        <img src="../static/img/banner/banner-10.jpg" alt="">
+                        <img src="${domainUrl}static/img/banner/banner-10.jpg" alt="">
                     </a>
                 </div>
             </div>
@@ -244,7 +244,7 @@
                     <div class="single-blog-post">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img src="../static/img/blog/1.jpg" alt="">
+                                <img src="${domainUrl}static/img/blog/1.jpg" alt="">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -257,7 +257,7 @@
                     <div class="single-blog-post">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img src="../static/img/blog/2.jpg" alt="">
+                                <img src="${domainUrl}static/img/blog/2.jpg" alt="">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -271,7 +271,7 @@
                 <div class="single-blog-post">
                     <div class="blog-img">
                         <a href="blog-details.html">
-                            <img src="../static/img/blog/3.jpg" alt="">
+                            <img src="${domainUrl}static/img/blog/3.jpg" alt="">
                         </a>
                     </div>
                     <div class="blog-content">
@@ -284,7 +284,7 @@
                 <div class="single-blog-post">
                     <div class="blog-img">
                         <a href="blog-details.html">
-                            <img src="../static/img/blog/4.jpg" alt="">
+                            <img src="${domainUrl}static/img/blog/4.jpg" alt="">
                         </a>
                     </div>
                     <div class="blog-content">

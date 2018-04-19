@@ -9,6 +9,7 @@ import com.newpower.stage.service.BestSellerService;
 import com.newpower.stage.service.CarouselFigureService;
 import com.newpower.stage.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,7 +24,8 @@ import java.util.List;
  */
 @Controller
 public class HomePageController {
-
+    @Value("${domainUrl}")
+    private String domainUrl;
     @Autowired
     private CarouselFigureService carouselFigureService;
     @Autowired
@@ -52,6 +54,8 @@ public class HomePageController {
 
         List<SimpleProductDto> newProducts = productService.getProductsByPromotionType(PromotionProductEnum.NEW_PRODUCT.getId());
         modelAndView.addObject("newProducts", newProducts);
+
+        modelAndView.addObject("domainUrl",domainUrl);
         return modelAndView;
     }
 
@@ -69,6 +73,8 @@ public class HomePageController {
         ModelAndView modelAndView = new ModelAndView(FTLViewConstants.HOMEPAGE_BEST_SELLER);
         List<SimpleProductDto> bestSellerProductDtos = bestSellerService.getProductsByBestSellerId(bestSellerId);
         modelAndView.addObject("bestSellerProductDtos", bestSellerProductDtos);
+
+        modelAndView.addObject("domainUrl",domainUrl);
         return modelAndView;
     }
 }
