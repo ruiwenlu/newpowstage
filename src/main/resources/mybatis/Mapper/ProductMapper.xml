@@ -70,6 +70,7 @@
         <result property="marketPrice" column="market_price"/>
         <result property="stars" column="stars"/>
         <result property="saleType" column="sale_type"/>
+        <result property="longDescription" column="long_description"/>
         <result property="description" column="description"/>
         <result property="reviews" column="reviews"/>
         <result property="categoryId" column="category_id"/>
@@ -89,7 +90,7 @@
     </resultMap>
     <select id="getProductDtoByProductId" resultMap="ProductDtoMap">
         select pr.id,pr.name_zh,pr.name_en,pr.delivery_time,
-        pr.stock,pr.sale_price,pr.market_price,pr.stars as stars,pr.sale_type,pr.description,pr.reviews,
+        pr.stock,pr.sale_price,pr.market_price,pr.stars as stars,pr.sale_type,pr.long_description,pr.description,pr.reviews,
         c.id as category_id,c.category_name,pr.create_time,pr.update_time,pi1.pic_url as pic_url1,pi2.pic_url as pic_url2
         ,pi3.pic_url as pic_url3
         from product pr

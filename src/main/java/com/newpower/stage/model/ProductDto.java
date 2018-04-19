@@ -10,6 +10,7 @@ public class ProductDto extends SimpleProductDto {
 
 
     private String description;
+    private String longDescription;
     private Integer reviews;
     private Integer categoryId;
     private String categoryName;
@@ -17,6 +18,14 @@ public class ProductDto extends SimpleProductDto {
     private Date updateTime;
     private List<String> smallPics;
     private List<String> LargePics;
+
+    public String getLongDescription() {
+        return longDescription;
+    }
+
+    public void setLongDescription(String longDescription) {
+        this.longDescription = longDescription;
+    }
 
     public String getDescription() {
         return description;

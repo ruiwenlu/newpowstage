@@ -144,16 +144,16 @@
             <div class="col-md-12">
                 <div class="single-product-tab">
                     <ul class="single-product-tab-navigation" role="tablist">
-                        <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Product Description</a></li>
-                        <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">reviews</a></li>
-                        <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">product tag</a></li>
+                        <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">产品详情</a></li>
+                        <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">评论</a></li>
+                        <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">标签</a></li>
                     </ul>
 
                     <!-- Tab panes -->
                     <div class="tab-content single-product-page">
                         <div role="tabpanel" class="tab-pane fade in active" id="tab1">
                             <div class="single-p-tab-content">
-                                <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis. </p>
+                                <p>${productDto.longDescription}</p>
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="tab2">
@@ -285,87 +285,132 @@
 </div>
 <!-- single product tab end -->
 <!-- upsell product area start-->
-<div class="upsell-product home2">
+<div class="new-products-area">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="product-title">
-                    <h2>upsell products</h2>
+                    <h2>主推产品</h2>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="upsell-slider">
+            <div class="new-product-slider">
+            [#list recommendProducts as recommendProduct]
                 <div class="col-md-12">
                     <div class="single-product">
+                        <div class="level-pro-new">
+                        [#--0 新品，1打折，2热卖--]
+                            [#if recommendProduct.saleType == 0]
+                                <span>new</span>
+                            [#elseif recommendProduct.saleType == 1]
+                                <span>sale</span>
+                            [#elseif recommendProduct.saleType == 2]
+                                <span>hot</span>
+                            [/#if]
+                        </div>
                         <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="${domainUrl}/static/img/product/25.png" alt="" class="primary-img">
-                                <img src="${domainUrl}/static/img/product/26.png" alt="" class="secondary-img">
+                            <a href="/product/detail">
+                                [#list recommendProduct.mainPics as mainPic]
+                                    [#if mainPic_index == 0]
+                                        <img src="${mainPic}" alt="" class="primary-img">
+                                    [#elseif mainPic_index = 1]
+                                        <img src="${mainPic}" alt="" class="secondary-img">
+                                    [/#if]
+                                [/#list]
                             </a>
                         </div>
-                        <div class="list-product-info">
-                            <div class="price-rating">
-                                <div class="ratings">
+                        <div class="product-name">
+                            <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
+                        </div>
+                        <div class="price-rating">
+                            <span class="old-price">${recommendProduct.marketPrice}</span>
+                            <span>${recommendProduct.salePrice}</span>
+                            <div class="ratings">
+                                [#list 1..recommendProduct.stars as i]
                                     <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o"></i>
-                                    <a href="#" class="review">1 Review(s)</a>
-                                    <a href="#" class="add-review">Add Your Review</a>
-                                </div>
+                                [/#list]
                             </div>
                         </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
+                        <div class="actions">
+                            <button type="submit" class="cart-btn" title="Add to cart">add to cart</button>
+                            <ul class="add-to-link">
+                                <li><a class="modal-view" data-target="#productModal" data-toggle="modal" href="#"> <i class="fa fa-search"></i></a></li>
+                                <li><a href="#"> <i class="fa fa-heart-o"></i></a></li>
+                                <li><a href="#"> <i class="fa fa-refresh"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            [/#list]
             </div>
         </div>
     </div>
 </div>
 <!-- upsell product area end-->
 <!-- related product area start-->
-<div class="related-product home2">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="product-title">
-                    <h2>related products</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="related-slider">
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="${domainUrl}/static/img/product/25.png" alt="" class="primary-img">
-                                <img src="${domainUrl}/static/img/product/26.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+[#--<div class="related-product home2">--]
+    [#--<div class="container">--]
+        [#--<div class="row">--]
+            [#--<div class="col-md-12">--]
+                [#--<div class="product-title">--]
+                    [#--<h2>相关产品</h2>--]
+                [#--</div>--]
+            [#--</div>--]
+        [#--</div>--]
+        [#--<div class="row">--]
+            [#--<div class="new-product-slider">--]
+            [#--[#list recommendProducts as recommendProduct]--]
+                [#--<div class="col-md-12">--]
+                    [#--<div class="single-product">--]
+                        [#--<div class="level-pro-new">--]
+                        [#--0 新品，1打折，2热卖--]
+                            [#--[#if recommendProduct.saleType == 0]--]
+                                [#--<span>new</span>--]
+                            [#--[#elseif recommendProduct.saleType == 1]--]
+                                [#--<span>sale</span>--]
+                            [#--[#elseif recommendProduct.saleType == 2]--]
+                                [#--<span>hot</span>--]
+                            [#--[/#if]--]
+                        [#--</div>--]
+                        [#--<div class="product-img">--]
+                            [#--<a href="/product/detail">--]
+                                [#--[#list recommendProduct.mainPics as mainPic]--]
+                                    [#--[#if mainPic_index == 0]--]
+                                        [#--<img src="${mainPic}" alt="" class="primary-img">--]
+                                    [#--[#elseif mainPic_index = 1]--]
+                                        [#--<img src="${mainPic}" alt="" class="secondary-img">--]
+                                    [#--[/#if]--]
+                                [#--[/#list]--]
+                            [#--</a>--]
+                        [#--</div>--]
+                        [#--<div class="product-name">--]
+                            [#--<a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>--]
+                        [#--</div>--]
+                        [#--<div class="price-rating">--]
+                            [#--<span class="old-price">${recommendProduct.marketPrice}</span>--]
+                            [#--<span>${recommendProduct.salePrice}</span>--]
+                            [#--<div class="ratings">--]
+                                [#--[#list 1..recommendProduct.stars as i]--]
+                                    [#--<i class="fa fa-star"></i>--]
+                                [#--[/#list]--]
+                            [#--</div>--]
+                        [#--</div>--]
+                        [#--<div class="actions">--]
+                            [#--<button type="submit" class="cart-btn" title="Add to cart">add to cart</button>--]
+                            [#--<ul class="add-to-link">--]
+                                [#--<li><a class="modal-view" data-target="#productModal" data-toggle="modal" href="#"> <i class="fa fa-search"></i></a></li>--]
+                                [#--<li><a href="#"> <i class="fa fa-heart-o"></i></a></li>--]
+                                [#--<li><a href="#"> <i class="fa fa-refresh"></i></a></li>--]
+                            [#--</ul>--]
+                        [#--</div>--]
+                    [#--</div>--]
+                [#--</div>--]
+            [#--[/#list]--]
+            [#--</div>--]
+        [#--</div>--]
+    [#--</div>--]
+[#--</div>--]
 <!-- related product area end-->
 [#include "/common/footer.ftl" /]
 </body>
