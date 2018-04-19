@@ -34,13 +34,16 @@
             <div class="col-sm-6">
                 <div class="single-product-img">
                     <div class="single-pro-main-image">
-                        <a href="#"><img id="optima_zoom" src="${domainUrl}/static/img/product/1.png" data-zoom-image="${domainUrl}/static/img/product/1.png" alt="optima"/></a>
+                        [#list productDto.mainPics as mainPic]
+                            <a class="mainPic" id="mainPic${mainPic_index}" [#if mainPic_index != 0]style="display: none" [/#if] href="#"><img id="optima_zoom" src="${domainUrl}${mainPic}" data-zoom-image="${domainUrl}${mainPic}" alt="optima"/></a>
+                        [/#list]
+
                     </div>
                 </div>
                 <div class="product-page-slider hidden-xs">
                     [#list productDto.smallPics as smallPic]
                         <div class="single-product-slider">
-                            <a href="#">
+                            <a href="javascript:doShow(${smallPic_index})">
                                 <img src="${domainUrl}${smallPic}" alt="">
                             </a>
                         </div>
@@ -348,70 +351,12 @@
     </div>
 </div>
 <!-- upsell product area end-->
-<!-- related product area start-->
-[#--<div class="related-product home2">--]
-    [#--<div class="container">--]
-        [#--<div class="row">--]
-            [#--<div class="col-md-12">--]
-                [#--<div class="product-title">--]
-                    [#--<h2>相关产品</h2>--]
-                [#--</div>--]
-            [#--</div>--]
-        [#--</div>--]
-        [#--<div class="row">--]
-            [#--<div class="new-product-slider">--]
-            [#--[#list recommendProducts as recommendProduct]--]
-                [#--<div class="col-md-12">--]
-                    [#--<div class="single-product">--]
-                        [#--<div class="level-pro-new">--]
-                        [#--0 新品，1打折，2热卖--]
-                            [#--[#if recommendProduct.saleType == 0]--]
-                                [#--<span>new</span>--]
-                            [#--[#elseif recommendProduct.saleType == 1]--]
-                                [#--<span>sale</span>--]
-                            [#--[#elseif recommendProduct.saleType == 2]--]
-                                [#--<span>hot</span>--]
-                            [#--[/#if]--]
-                        [#--</div>--]
-                        [#--<div class="product-img">--]
-                            [#--<a href="/product/detail">--]
-                                [#--[#list recommendProduct.mainPics as mainPic]--]
-                                    [#--[#if mainPic_index == 0]--]
-                                        [#--<img src="${mainPic}" alt="" class="primary-img">--]
-                                    [#--[#elseif mainPic_index = 1]--]
-                                        [#--<img src="${mainPic}" alt="" class="secondary-img">--]
-                                    [#--[/#if]--]
-                                [#--[/#list]--]
-                            [#--</a>--]
-                        [#--</div>--]
-                        [#--<div class="product-name">--]
-                            [#--<a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>--]
-                        [#--</div>--]
-                        [#--<div class="price-rating">--]
-                            [#--<span class="old-price">${recommendProduct.marketPrice}</span>--]
-                            [#--<span>${recommendProduct.salePrice}</span>--]
-                            [#--<div class="ratings">--]
-                                [#--[#list 1..recommendProduct.stars as i]--]
-                                    [#--<i class="fa fa-star"></i>--]
-                                [#--[/#list]--]
-                            [#--</div>--]
-                        [#--</div>--]
-                        [#--<div class="actions">--]
-                            [#--<button type="submit" class="cart-btn" title="Add to cart">add to cart</button>--]
-                            [#--<ul class="add-to-link">--]
-                                [#--<li><a class="modal-view" data-target="#productModal" data-toggle="modal" href="#"> <i class="fa fa-search"></i></a></li>--]
-                                [#--<li><a href="#"> <i class="fa fa-heart-o"></i></a></li>--]
-                                [#--<li><a href="#"> <i class="fa fa-refresh"></i></a></li>--]
-                            [#--</ul>--]
-                        [#--</div>--]
-                    [#--</div>--]
-                [#--</div>--]
-            [#--[/#list]--]
-            [#--</div>--]
-        [#--</div>--]
-    [#--</div>--]
-[#--</div>--]
-<!-- related product area end-->
 [#include "/common/footer.ftl" /]
+<script type="text/javascript">
+    function doShow(n){
+        $('.mainPic').hide();
+        $('#mainPic'+n).show();
+    }
+</script>
 </body>
 </html>
