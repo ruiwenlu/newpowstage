@@ -16,7 +16,7 @@
                         [/#if]
                     </div>
                     <div class="product-img">
-                        <a href="/product/detail">
+                        <a href="/product/detail/${bestSellerProductDto.productId}">
                             [#list bestSellerProductDto.mainPics as mainPic]
                                 [#if mainPic_index == 0]
                                     <img src="${mainPic}" alt="" class="primary-img">

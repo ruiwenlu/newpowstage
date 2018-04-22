@@ -111,7 +111,7 @@
                             [/#if]
                         </div>
                         <div class="product-img">
-                            <a href="/product/detail">
+                            <a href="/product/detail/${featureProduct.productId}">
                                 [#list featureProduct.mainPics as mainPic]
                                     [#if mainPic_index == 0]
                                         <img src="${mainPic}" alt="" class="primary-img">
@@ -122,7 +122,7 @@
                             </a>
                         </div>
                         <div class="product-name">
-                            <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
+                            <a href="/product/detail/${featureProduct.productId}" title="${featureProduct.nameZH}">${featureProduct.nameZH}</a>
                         </div>
                         <div class="price-rating">
                             <span class="old-price">${featureProduct.marketPrice}</span>
@@ -190,7 +190,7 @@
                             [/#if]
                         </div>
                         <div class="product-img">
-                            <a href="/product/detail">
+                            <a href="/product/detail/${newProduct.productId}">
                                 [#list newProduct.mainPics as mainPic]
                                     [#if mainPic_index == 0]
                                         <img src="${mainPic}" alt="" class="primary-img">
@@ -201,7 +201,7 @@
                             </a>
                         </div>
                         <div class="product-name">
-                            <a href="/product/detail" title="Fusce aliquam">Fusce aliquam</a>
+                            <a href="/product/detail/${newProduct.productId}" title="${newProduct.nameZH}">${newProduct.nameZH}</a>
                         </div>
                         <div class="price-rating">
                             <span class="old-price">${newProduct.marketPrice}</span>
